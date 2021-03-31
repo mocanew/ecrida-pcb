@@ -7,13 +7,13 @@
                 {
                     "category": "ecrida",
                     "name": "ECRIDA",
-                    "url": "https://github.com/rontav/ecrida-pcb/releases/download/0.0.1/ecrida-0.0.1.zip",
-                    "archiveFileName": "ecrida-0.0.1.zip",
-                    "checksum": "SHA-256:f43eb158cf0979d09c411cc8ad43f992172ba2b666594565abc67721945ba907",
+                    "url": "https://github.com/rontav/ecrida-pcb/releases/download/0.0.2/ecrida-0.0.2.zip",
+                    "archiveFileName": "ecrida-0.0.2.zip",
+                    "checksum": "SHA-256:f6707c4568986e51d93b4d3841cf692c4174d8a9eb384b5eabb13cbd72992fcf",
                     "help": {
                         "online": ""
                     },
-                    "version": "0.0.1",
+                    "version": "0.0.2",
                     "architecture": "avr",
                     "boards": [
                         {
