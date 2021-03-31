@@ -25,7 +25,7 @@
 
 #include <avr/pgmspace.h>
 
-#define NUM_DIGITAL_PINS            70
+#define NUM_DIGITAL_PINS            72
 #define NUM_ANALOG_INPUTS           16
 #define analogInputToDigitalPin(p)  ((p < 16) ? (p) + 54 : -1)
 #define digitalPinHasPWM(p)         (((p) >= 2 && (p) <= 13) || ((p) >= 44 && (p)<= 46))
@@ -232,6 +232,8 @@ const uint8_t PROGMEM digital_pin_to_port_PGM[] = {
 	PK	, // PK 5 ** 67 ** A13	
 	PK	, // PK 6 ** 68 ** A14	
 	PK	, // PK 7 ** 69 ** A15	
+	PJ  , // PJ 3 ** 70 ** D70
+	PJ  , // PJ 2 ** 71 ** D71
 };
 
 const uint8_t PROGMEM digital_pin_to_bit_mask_PGM[] = {
@@ -307,6 +309,8 @@ const uint8_t PROGMEM digital_pin_to_bit_mask_PGM[] = {
 	_BV( 5 )	, // PK 5 ** 67 ** A13	
 	_BV( 6 )	, // PK 6 ** 68 ** A14	
 	_BV( 7 )	, // PK 7 ** 69 ** A15	
+	_BV( 3 )	, // PJ 3 ** 70 ** D70	
+	_BV( 2 )	, // PJ 2 ** 71 ** D71	
 };
 
 const uint8_t PROGMEM digital_pin_to_timer_PGM[] = {
@@ -382,6 +386,8 @@ const uint8_t PROGMEM digital_pin_to_timer_PGM[] = {
 	NOT_ON_TIMER	, // PK 5 ** 67 ** A13	
 	NOT_ON_TIMER	, // PK 6 ** 68 ** A14	
 	NOT_ON_TIMER	, // PK 7 ** 69 ** A15	
+	NOT_ON_TIMER	, // PJ 3 ** 70 ** D70
+	NOT_ON_TIMER	, // PJ 2 ** 71 ** D71	
 };
 
 #endif
